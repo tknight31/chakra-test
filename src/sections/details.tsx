@@ -23,7 +23,7 @@ const Details = () => {
         <GridItem colSpan={1}>
           <FormControl>
             <FormLabel>First Name</FormLabel>
-            <Input placeholder="Dante" />
+            <Input placeholder="Huey" />
           </FormControl>
         </GridItem>
         <GridItem colSpan={1}>
