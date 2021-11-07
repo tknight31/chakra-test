@@ -7,6 +7,9 @@ import {
   Text,
   SimpleGrid,
   GridItem,
+  Select,
+  Checkbox,
+  Button,
 } from "@chakra-ui/react";
 
 const Details = () => {
@@ -31,9 +34,33 @@ const Details = () => {
         </GridItem>
         <GridItem colSpan={2}>
           <FormControl>
-            <FormLabel>Email</FormLabel>
-            <Input placeholder="dfreezy@testing.com" />
+            <FormLabel>Address</FormLabel>
+            <Input placeholder="4 Privet Dr" />
           </FormControl>
+        </GridItem>
+        <GridItem colSpan={1}>
+          <FormControl>
+            <FormLabel>City</FormLabel>
+            <Input placeholder="Brooklyn" />
+          </FormControl>
+        </GridItem>
+        <GridItem colSpan={1}>
+          <FormControl>
+            <FormLabel>Country</FormLabel>
+            <Select>
+              <option value="us">United States</option>
+              <option value="bb">Barbados</option>
+              <option value="ca">Canada</option>
+            </Select>
+          </FormControl>
+        </GridItem>
+        <GridItem colSpan={2}>
+          <Checkbox defaultChecked>Ship to billing address</Checkbox>
+        </GridItem>
+        <GridItem colSpan={2}>
+          <Button size="lg" w="full">
+            Place Order
+          </Button>
         </GridItem>
       </SimpleGrid>
     </VStack>
